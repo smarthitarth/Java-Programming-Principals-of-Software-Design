@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=MarkovOne
+comment1.params=
+comment1.target=MarkovOne()
+comment2.params=seed
+comment2.target=void\ setRandom(int)
+comment3.params=s
+comment3.target=void\ setTraining(java.lang.String)
+comment4.params=numChars
+comment4.target=java.lang.String\ getRandomText(int)
+comment4.text=\ public\ ArrayList<String>\ getFollows(String\ key){\r\n\ \ \ \ \ \ \ \ ArrayList<String>\ follows\ \=\ new\ ArrayList<String>();\r\n\ \ \ \ \ \ \ \ int\ pos\ \=\ 0;\r\n\ \ \ \ \ \ \ \ //int\ index\ \=\ 0;\r\n\ \ \ \ \ \ \ \ while(pos\ <\ myText.length()){\r\n\ \ \ \ \ \ \ \ \ \ \ \ int\ index\ \=\ myText.indexOf(key,\ pos);\r\n\ \ \ \ \ \ \ \ \ \ \ \ if(index\ \=\=\ -1){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;\ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ if(index\ +\ key.length()\ >\=\ myText.length()-1)\ {break;}\r\n\ \ \ \ \ \ \ \ \ \ \ \ follows.add(myText.substring(index+key.length(),\ index+key.length()+1));\r\n\ \ \ \ \ \ \ \ \ \ //\ \ System.out.println("Position\:\ "\ +\ pos\ +\ "\ index\:\ "\ +\ index\ +\ "\ Follows\ size\:\ "\ +\ follows.size());\r\n\ \ \ \ \ \ \ \ \ \ \ \ pos\ \=\ index+key.length();\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ //\ \ for(int\ i\ \=\ 0;\ i\ <\ follows.size();\ i++)\r\n\ \ \ \ \ \ //\ \ \ \ \ {System.out.println(follows.get(i));}\r\n\ \ \ \ \ \ \ \ return\ follows;\r\n}
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6
